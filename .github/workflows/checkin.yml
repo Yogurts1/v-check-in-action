@@ -5,10 +5,10 @@ on:
     branches: 
       - main
   schedule:
-    - cron: '0 3 * * *'
+    - cron: '30 3 * * *'
 
 jobs:
-  Hao4K-autoSignIn:
+  v-checkin:
     runs-on: ubuntu-latest
     
     steps:
