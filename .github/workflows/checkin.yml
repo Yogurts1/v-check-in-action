@@ -1,0 +1,30 @@
+name: checkin
+
+on:
+  push:
+    branches: 
+      - main
+  schedule:
+    - cron: '0 0 11,23 * * ?'
+
+jobs:
+  Hao4K-autoSignIn:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: checkout
+      uses: actions/checkout@master
+    
+    - name: Set python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.8'
+    
+    - name: Install dependencies
+      run: python -m pip install --upgrade requests
+    
+    - name: v.qq.com check in
+      env:
+        ServerChan_SCKEY: ${{ secrets.ServerChan_SCKEY }}
+        V_Cookie: ${{ secrets.V_Cookie }}
+      run: python main.py
