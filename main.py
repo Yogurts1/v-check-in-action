@@ -3,12 +3,16 @@ import os
 
 # 参考这个网站https://sc.ftqq.com/获取自己的sckey，如果cookie失效会通过server酱提示
 sckey = os.environ["SERVERCHAN_SCKEY"]
+# sckey = ''
 send_url = "https://sc.ftqq.com/%s.send" % (sckey)
 
 # https://access.video.qq.com/user/auth_refresh 获取 cookie
 login_cookie = os.environ["V_COOKIE_LOGIN"]
 signin_cookie = os.environ["V_COOKIE_SIGNIN"]
 auth_refresh_url = os.environ["V_AUTH_REFRESH_URL"]
+# login_cookie = ''
+# signin_cookie = ''
+# auth_refresh_url = ''
 Referer = 'https://v.qq.com'
 Agent = 'User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1'
 headers_login = {
