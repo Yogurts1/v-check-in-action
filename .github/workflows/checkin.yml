@@ -25,6 +25,6 @@ jobs:
     
     - name: v.qq.com check in
       env:
-        ServerChan_SCKEY: ${{ secrets.ServerChan_SCKEY }}
-        V_Cookie: ${{ secrets.V_Cookie }}
+        SERVERCHAN_SCKEY: ${{ secrets.SERVERCHAN_SCKEY }}
+        V_COOKIE: ${{ secrets.V_COOKIE }}
       run: python main.py

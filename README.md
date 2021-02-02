@@ -1,4 +1,4 @@
-# 腾讯视频签到 actions ![checkin](https://github.com/cy920820/v-check-in/workflows/checkin/badge.svg)
+# 腾讯视频每日签到 action ![checkin](https://github.com/cy920820/v-check-in/workflows/checkin/badge.svg)
 
 > 借助 github actions，每日上午 06 点，以及晚上 23 点定时触发
 

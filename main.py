@@ -2,8 +2,8 @@ import requests
 import os
 
 # 参考这个网站https://sc.ftqq.com/获取自己的sckey，如果cookie失效会通过server酱提示
-sckey = os.environ["ServerChan_SCKEY"]
-Cookie = os.environ["V_Cookie"]
+sckey = os.environ["SERVERCHAN_SCKEY"]
+Cookie = os.environ["V_COOKIE"]
 send_url = "https://sc.ftqq.com/%s.send" % (sckey)
 # https://access.video.qq.com/user/auth_refresh
 Referer = 'https://v.qq.com'
